@@ -1,0 +1,410 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 71 71, 71, LIC=GMZI6-DU2A7-VEMHA-1AJM6-W5ZIG-8RT7T
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+D:\my_freerots\test8\MDK-ARM\test1.uvprojx
+Project File Date:  05/16/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Rebuild target 'test1'
+assembling startup_stm32f103xb.s...
+compiling rtc.c...
+compiling i2c.c...
+compiling stm32f1xx_it.c...
+compiling dma.c...
+compiling tim.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_timebase_tim.c...
+compiling usart.c...
+compiling stm32f1xx_hal_msp.c...
+compiling freertos.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../user/freertos_8266.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user/timecall.h(7): warning:  #1295-D: Deprecated declaration create_time_1 - give arg types
+  void create_time_1();
+../user/timecall.h(8): warning:  #1295-D: Deprecated declaration start_time_1 - give arg types
+  void start_time_1();
+../user/timecall.h(9): warning:  #1295-D: Deprecated declaration stop_time_1 - give arg types
+  void stop_time_1();
+../user/timecall.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user/esp8266.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif /* _DRIVER_UART_H */
+../user/freertos_onenet.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user/freertos_user.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/freertos.c(118): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "TaskFunction_t"
+  		xTaskCreate(OLED_Test, "oledTask", 128, NULL, osPriorityNormal, &oled_Handle);
+../Core/Src/freertos.c: 12 warnings, 0 errors
+compiling main.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Core/Src/main.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling croutine.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/croutine.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal_rcc.c...
+compiling list.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/list.c: 3 warnings, 0 errors
+compiling event_groups.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c: 3 warnings, 0 errors
+compiling stream_buffer.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c: 3 warnings, 0 errors
+compiling queue.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c: 3 warnings, 0 errors
+compiling timers.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c: 3 warnings, 0 errors
+compiling tasks.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c: 3 warnings, 0 errors
+compiling heap_4.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c: 3 warnings, 0 errors
+compiling port.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(503): warning:  #223-D: function "PRE_SLEEP_PROCESSING" declared implicitly
+  			configPRE_SLEEP_PROCESSING( &xModifiableIdleTime );
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c(510): warning:  #223-D: function "POST_SLEEP_PROCESSING" declared implicitly
+  			configPOST_SLEEP_PROCESSING( &xExpectedIdleTime );
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c: 5 warnings, 0 errors
+compiling driver_lcd.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_rtc_ex.c...
+compiling stm32f1xx_hal_rtc.c...
+compiling cmsis_os2.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_uart.c...
+compiling driver_timer.c...
+compiling driver_led.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_tim.c...
+compiling driver_oled.c...
+..\Drivers\DshanMCU-F103\driver_oled.c(710): warning:  #223-D: function "vTaskDelay" declared implicitly
+  		vTaskDelay(200);
+..\Drivers\DshanMCU-F103\driver_oled.c(156): warning:  #177-D: function "OLED_WriteData"  was declared but never referenced
+  static int OLED_WriteData(uint8_t data)
+..\Drivers\DshanMCU-F103\driver_oled.c(204): warning:  #177-D: function "OLED_H_Scroll"  was declared but never referenced
+  static void OLED_H_Scroll(H_SCROLL_DIR dir, uint8_t start, uint8_t fr_time, uint8_t end)
+..\Drivers\DshanMCU-F103\driver_oled.c(228): warning:  #177-D: function "OLED_HV_Scroll"  was declared but never referenced
+  static void OLED_HV_Scroll(HV_SCROLL_DIR dir, uint8_t start, uint8_t fr_time, uint8_t end, uint8_t offset)
+..\Drivers\DshanMCU-F103\driver_oled.c(248): warning:  #177-D: function "OLED_SetVScrollArea"  was declared but never referenced
+  static void OLED_SetVScrollArea(uint8_t area, uint8_t row_num)
+..\Drivers\DshanMCU-F103\driver_oled.c(297): warning:  #177-D: function "OLED_SetColAddr_HV"  was declared but never referenced
+  static void OLED_SetColAddr_HV(uint8_t start, uint8_t end)
+..\Drivers\DshanMCU-F103\driver_oled.c(314): warning:  #177-D: function "OLED_SetPageAddr_HV"  was declared but never referenced
+  static void OLED_SetPageAddr_HV(uint8_t start, uint8_t end)
+..\Drivers\DshanMCU-F103\driver_oled.c(420): warning:  #177-D: function "OLED_SetPreChargePeriod"  was declared but never referenced
+  static void OLED_SetPreChargePeriod(uint8_t phase1, uint8_t phase2)
+..\Drivers\DshanMCU-F103\driver_oled.c(434): warning:  #177-D: function "OLED_SetVcomhLevel"  was declared but never referenced
+  static void OLED_SetVcomhLevel(VCOMH_LEVEL level)
+..\Drivers\DshanMCU-F103\driver_oled.c: 9 warnings, 0 errors
+compiling freertos_rtc.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+..\user\freertos_8266.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\timecall.h(7): warning:  #1295-D: Deprecated declaration create_time_1 - give arg types
+  void create_time_1();
+..\user\timecall.h(8): warning:  #1295-D: Deprecated declaration start_time_1 - give arg types
+  void start_time_1();
+..\user\timecall.h(9): warning:  #1295-D: Deprecated declaration stop_time_1 - give arg types
+  void stop_time_1();
+..\user\timecall.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\esp8266.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif /* _DRIVER_UART_H */
+..\user\freertos_onenet.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_user.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_rtc.c: 11 warnings, 0 errors
+compiling driver_uart.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+../user/freertos_8266.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user/timecall.h(7): warning:  #1295-D: Deprecated declaration create_time_1 - give arg types
+  void create_time_1();
+../user/timecall.h(8): warning:  #1295-D: Deprecated declaration start_time_1 - give arg types
+  void start_time_1();
+../user/timecall.h(9): warning:  #1295-D: Deprecated declaration stop_time_1 - give arg types
+  void stop_time_1();
+../user/timecall.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user/esp8266.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif /* _DRIVER_UART_H */
+../user/freertos_onenet.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user/freertos_user.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Drivers\DshanMCU-F103\driver_uart.c(58): warning:  #940-D: missing return statement at end of non-void function "stm32_uart_init" 
+  }
+..\Drivers\DshanMCU-F103\driver_uart.c(94): warning:  #223-D: function "strlen" declared implicitly
+  	 HAL_UART_Transmit_DMA(&huart1, (uint8_t *)buf, strlen(buf));
+..\Drivers\DshanMCU-F103\driver_uart.c(121): warning:  #223-D: function "strlen" declared implicitly
+  		HAL_UART_Transmit_DMA(&huart2, (uint8_t *)buf, strlen(buf));
+..\Drivers\DshanMCU-F103\driver_uart.c(147): warning:  #223-D: function "strlen" declared implicitly
+  		HAL_UART_Transmit_DMA(&huart3, (uint8_t *)buf, strlen(buf));
+..\Drivers\DshanMCU-F103\driver_uart.c(184): warning:  #177-D: variable "c"  was declared but never referenced
+      char c;
+..\Drivers\DshanMCU-F103\driver_uart.c(185): warning:  #177-D: variable "err"  was declared but never referenced
+  	  BaseType_t err;
+..\Drivers\DshanMCU-F103\driver_uart.c(239): warning:  #223-D: function "memset" declared implicitly
+  		memset(uart_1.aRxBuffer,0x00,sizeof(uart_1.aRxBuffer));
+..\Drivers\DshanMCU-F103\driver_uart.c(250): warning:  #223-D: function "strcpy" declared implicitly
+  		strcpy(uart2_to_esp.res,uart_2.aRxBuffer);
+..\Drivers\DshanMCU-F103\driver_uart.c(258): warning:  #223-D: function "memset" declared implicitly
+  		memset(uart_2.aRxBuffer,0x00,sizeof(uart_2.aRxBuffer));
+..\Drivers\DshanMCU-F103\driver_uart.c(229): warning:  #550-D: variable "xReturn"  was set but never used
+  	BaseType_t xReturn;/* å®šä¹‰ä¸€ä¸ªåˆ›å»ºä¿¡æ¯è¿”å›žå€¼ï¼Œé»˜è®¤ä¸ºpdPASS */
+..\Drivers\DshanMCU-F103\driver_uart.c: 21 warnings, 0 errors
+compiling freertos_demo.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+..\user\freertos_demo.c(31): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\freertos_demo.c: 4 warnings, 0 errors
+compiling freertos_8266.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+..\user\freertos_8266.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\timecall.h(7): warning:  #1295-D: Deprecated declaration create_time_1 - give arg types
+  void create_time_1();
+..\user\timecall.h(8): warning:  #1295-D: Deprecated declaration start_time_1 - give arg types
+  void start_time_1();
+..\user\timecall.h(9): warning:  #1295-D: Deprecated declaration stop_time_1 - give arg types
+  void stop_time_1();
+..\user\timecall.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\esp8266.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif /* _DRIVER_UART_H */
+..\user\freertos_onenet.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_user.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_8266.c(34): warning:  #223-D: function "strstr" declared implicitly
+  			if(strstr(uart2_to_esp.res, rev_ok) != NULL)		//Èç¹û¼ìË÷µ½¹Ø¼ü´Ê
+..\user\freertos_8266.c(26): warning:  #177-D: variable "a"  was declared but never referenced
+  		char *a="+";
+..\user\freertos_8266.c(56): warning:  #223-D: function "strcpy" declared implicitly
+  	strcpy(rev_ok,res);
+..\user\freertos_8266.c(58): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "uint32_t *"
+  	xTaskNotifyWait(0,0xFFFFFFFF,&rev,portMAX_DELAY);
+..\user\freertos_8266.c(73): warning:  #940-D: missing return statement at end of non-void function "ESP8266_SendCmd" 
+  }
+..\user\freertos_8266.c(78): warning:  #177-D: variable "dataPtr"  was declared but never referenced
+  	unsigned char *dataPtr;
+..\user\freertos_8266.c(79): warning:  #177-D: variable "status"  was declared but never referenced
+  	unsigned char status = 1;
+..\user\freertos_8266.c: 18 warnings, 0 errors
+compiling timecall.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+..\user\freertos_8266.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\timecall.h(7): warning:  #1295-D: Deprecated declaration create_time_1 - give arg types
+  void create_time_1();
+..\user\timecall.h(8): warning:  #1295-D: Deprecated declaration start_time_1 - give arg types
+  void start_time_1();
+..\user\timecall.h(9): warning:  #1295-D: Deprecated declaration stop_time_1 - give arg types
+  void stop_time_1();
+..\user\timecall.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\esp8266.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif /* _DRIVER_UART_H */
+..\user\freertos_onenet.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_user.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\timecall.c(51): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\timecall.c: 12 warnings, 0 errors
+compiling freertos_onenet.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+..\user\freertos_8266.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\timecall.h(7): warning:  #1295-D: Deprecated declaration create_time_1 - give arg types
+  void create_time_1();
+..\user\timecall.h(8): warning:  #1295-D: Deprecated declaration start_time_1 - give arg types
+  void start_time_1();
+..\user\timecall.h(9): warning:  #1295-D: Deprecated declaration stop_time_1 - give arg types
+  void stop_time_1();
+..\user\timecall.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\esp8266.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif /* _DRIVER_UART_H */
+..\user\freertos_onenet.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_user.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\freertos_onenet.c(29): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(cmdBuf, "AT+CIPSEND=%d\r\n",edpPacket._len);		//·¢ËÍÃüÁî
+..\user\freertos_onenet.c(30): warning:  #223-D: function "ESP8266_SendCmd" declared implicitly
+  		ESP8266_SendCmd(cmdBuf,">");
+..\user\freertos_onenet.c(45): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\freertos_onenet.c(19): warning:  #177-D: variable "dataPtr"  was declared but never referenced
+  	unsigned char *dataPtr;
+..\user\freertos_onenet.c: 15 warnings, 0 errors
+compiling edpkit.c...
+../Core/Inc/FreeRTOSConfig.h(92): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_PRIORITY"  (declared at line 49)
+  #define configTIMER_TASK_PRIORITY                ( 2 )
+../Core/Inc/FreeRTOSConfig.h(93): warning:  #47-D: incompatible redefinition of macro "configTIMER_QUEUE_LENGTH"  (declared at line 53)
+  #define configTIMER_QUEUE_LENGTH                 10
+../Core/Inc/FreeRTOSConfig.h(94): warning:  #47-D: incompatible redefinition of macro "configTIMER_TASK_STACK_DEPTH"  (declared at line 51)
+  #define configTIMER_TASK_STACK_DEPTH             256
+..\user\edpkit.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=26736 RO-data=2376 RW-data=208 ZI-data=14008  
+FromELF: creating hex file...
+"test1\test1.axf" - 0 Error(s), 140 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_test1
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  D:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>

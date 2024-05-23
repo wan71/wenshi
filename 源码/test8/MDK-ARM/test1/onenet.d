@@ -1,0 +1,11 @@
+test1\onenet.o: ..\user\NET\onenet.c
+test1\onenet.o: D:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h
+test1\onenet.o: .\RTE\_test1\RTE_Components.h
+test1\onenet.o: ../Drivers/CMSIS/Include/core_cm3.h
+test1\onenet.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+test1\onenet.o: ../Drivers/CMSIS/Include/cmsis_version.h
+test1\onenet.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+test1\onenet.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+test1\onenet.o: D:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h
+test1\onenet.o: ..\user\NET\esp8266.h
+test1\onenet.o: ..\user\NET\onenet.h
